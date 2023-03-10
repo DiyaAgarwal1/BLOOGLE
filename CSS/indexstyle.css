@@ -384,6 +384,15 @@ footer{
     display: inline;
     box-sizing: border-box;
   }
-
+ main p {
+    font-size: 13px;
+ }
+ main h2{
+    font-size: 20px;
+ }
+ main a{
+    font-size: 15px;
+ }
+ 
   
 }
