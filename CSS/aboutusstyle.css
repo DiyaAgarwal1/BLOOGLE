@@ -4,9 +4,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #c1aba6;
+    background-color: #4B4E6B;
     /* padding-bottom: 100px; */
-    color: #6e0d25;
+    color: white;
   }
   
   .header{
@@ -14,24 +14,25 @@ body {
     width: 100%;
     padding: 20px;
     display: block;
-    color: #c1aba6;
+    color: white;
     display: flex;
-    gap: 23%;
-    background-color: #6e0d25;
+    gap: 20%;
+    background-color: black;
     align-items: center;
   }
     .section-header {
     text-align: center;
+    align-items: center;
     margin: 0 auto;
     padding-top: 48px;
-    padding-left: 108px;
+    /* padding-left: 95px; */
     font: 300 60px 'Oswald', sans-serif;
-    color: #c1aba6;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 6px;
   }
   footer{
-    background-color: #6e0d25;
+    background-color: black;
     height: 120px;
     padding-bottom: 0;
     display: flex;
@@ -39,7 +40,7 @@ body {
     align-items: center;
   }
   footer a{
-    color: #c1aba6;
+    color: white;
     font-size: 30px;
     text-decoration: none;
     display: inline-block;
@@ -47,8 +48,8 @@ body {
   }
   footer a:hover{
     text-decoration: none;
-    background-color: #f0f0f0;
-    color: #6e0d25;
+    background-color: #ffff99;
+    color: #46309C;;
     font-weight: bolder;
     padding: 25px;
     border-radius: 55%;
@@ -58,11 +59,12 @@ body {
   }
   main h1{
     text-align: center;
-    color: #6e0d25;
+    color: #D3D3D3;
+    text-shadow: 0 0 10px black;
   }
   main p{
     padding-left: 10px;
-    color: #333;
+    color: #D3D3D3;
     font-size: 25px;
   }
   .journalists {
@@ -102,7 +104,7 @@ body {
   }
   .last p{
     text-align: center;
-    color: #333;
+    color: #D3D3D3;
     font-size: 25px;
   }
     /* Begin Media Queries*/
