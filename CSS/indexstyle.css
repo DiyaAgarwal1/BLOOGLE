@@ -23,9 +23,9 @@
     opacity: 0.5;
   }
   .hover-image{
-    width:150px ;
-    height:100px;
-    margin-left: 175px;
+    width: 75px ;
+    height: 50px;
+    margin-left: 160px;
     margin-top: -150px;
   }
   
@@ -460,6 +460,10 @@ footer{
         padding-top: 15px;
         margin-bottom: 15px;
         margin-left: 0%;
+    }
+    .hover-image{
+      width: 40px ;
+      height: 25px;
     }
 
     .header{
