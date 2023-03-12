@@ -7,13 +7,26 @@
     <title>BLOOGLE</title>
     <link rel="stylesheet" href="/CSS/indexstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
- <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+    <style>
+        #menu-btn {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        #menu-btn:hover {
+            transform: rotate(90deg);
+        }
+        .dactive {
+            display: block;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  -->
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <a href="#"> <img src="/images/logoof.png" alt="LOGO" height="125" width="300"> </a>
             <nav>
+
                 <div id="menu-btn" class="fas fa-bars"></div>
                 <ul class="menu">
                   
@@ -184,22 +197,32 @@
 </footer>
 <script>
     let menu = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .menu');
+    let navbar = document.querySelector('.header .menu');
+    let isOpen = false;
 
-menu.onclick = () =>{
-menu.classList.toggle('fa-times');
-navbar.classList.toggle('dactive');
+    menu.onclick = () => {
+        if (isOpen) {
+            menu.classList.remove('fa-times', 'fa-rotate-90', 'fa-flip-horizontal');
+            menu.classList.add('fa-bars');
+            navbar.classList.remove('dactive');
+            isOpen = false;
+        } else {
+            menu.classList.remove('fa-bars');
+            menu.classList.add('fa-times', 'fa-rotate-90', 'fa-flip-horizontal');
+            navbar.classList.add('dactive');
+            isOpen = true;
+        }
+    };
 
-};
-
-window.onscroll = () =>{
-menu.classList.remove('fa-times');
-navbar.classList.remove('dactive');
-};
-
-
-
-
+    window.onscroll = () => {
+        if (isOpen) {
+            menu.classList.remove('fa-times', 'fa-rotate-90', 'fa-flip-horizontal');
+            menu.classList.add('fa-bars');
+            navbar.classList.remove('dactive');
+            isOpen = false;
+        }
+    };
 </script>
+
 </body>
 </html>

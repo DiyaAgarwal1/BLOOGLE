@@ -442,36 +442,50 @@ footer{
 
 @media (max-width:700px)
 {
+
+
+
+
     html body{
         overflow-x: hidden;
         max-width: 80%;
         box-sizing: border-box;
     }
-
+    .but {
+      background-color: black;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+      margin-left: -213px;
+    }
+    .hover-image{
+      width: 40px ;
+      height: 25px;
+      padding-right: 120px;
+      margin-top: -150px;
+    }
     .wrapper a{
         display: inline;
         align-items: left;
         box-sizing: border-box;
     }
     .wrapper header a img{
-        width: 260px;
-        height: 125px;
+        width: 200px;
+        height: 100px;
         padding-left: 0;
-        padding-top: 15px;
+        padding-top: 5px;
         margin-bottom: 15px;
         margin-left: 0%;
     }
-    .hover-image{
-      width: 40px ;
-      height: 25px;
-    }
+
 
     .header{
         position:absolute;
         top:0; left:0; right:0;
-        display: inline-block;
+        display: flex;
         align-items:flex-end;
         width: 82.5%;
+        height: 20%;
         padding:0%;
         margin-right: 0%;
         z-index: 300;
@@ -481,7 +495,8 @@ footer{
 
     #menu-btn{
         display:block;
-        padding-left: 60%;
+        padding-left: 0%;
+        margin-top: 0%;
         
       }
       .menu{
@@ -534,11 +549,16 @@ footer{
   nav ul li a{
     font-size: 20px;
   }
+  .site-footer{
+    width: 100%;
+    display: inline-block;
+    background-color: black;
+  }
   footer{
     width: 100%;
     display: block;
     align-items: center;
-    margin: auto;
+    margin-right: 0;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 25px;
@@ -567,7 +587,7 @@ footer{
     margin: 0 auto;
     max-width: 80%;
     padding: 0;
-    margin-top: 250px;
+    margin-top: 180px;
   }
   
   .one, .two, .three {
